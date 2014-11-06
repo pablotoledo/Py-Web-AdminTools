@@ -30,7 +30,7 @@ PUERTO = 21
 USUARIO = 'miuser'
 CLAVE = 'mipassword'
 ruta = "/"
-destino = "/home/Usuario/backup/temporal" # No poner el / al final del string
+destino = "/home/Usuario/backup/temporal" 
 ftp = FTP()
 
 #Variables globales para logs
@@ -142,7 +142,7 @@ def mostrarLog():
         print('\t'+str(elemento))
     print('##################################################################')
 
-#Método de cipia
+#Método de copia
 def comprimirYBorrar(ruta):
     print('Comprimiendo '+ruta)
     assert os.path.isdir(ruta)
